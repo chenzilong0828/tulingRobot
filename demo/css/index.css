@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    display: block;
+    height: 600px;
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+.header{
+    background-color:#4087fd;
+    height:60px
+}
+.logo{
+    float: left;
+    margin-top: 15px;
+}
+.logo-text{
+    font-family:"SimHei" !important;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:18px;
+    margin-left:20px;
+    display:inline;
+    color: white;
+}
+.func-btn{
+    float: right;
+    display: inline;
+    margin-right: 40px;
+    margin-top: 20px;
+    color: white;
+}
+.main{
+    height: 520px;
+    /*border: 4px solid yellowgreen;*/
+}
+.lside{
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #e2e2e2;
+    /*border: 1px solid blue;*/
+}
+.chat-box{
+    box-sizing: border-box;
+    width: 100%;
+    height: 440px;
+    position: relative;
+    /*border: 1px solid red;*/
+}
+.jspScrollable{
+    float: left;
+    width: 100%;
+    height: 410px;
+    padding: 0px;
+    overflow: hidden;
+    outline: 0px;
+    /*border: 1px solid blue;*/
+}
+.jspContainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+.jspPane{
+    top: 0;
+    width: 600px;
+    padding: 0;
+    position: absolute;
+    /*border: 1px solid pink;*/
+}
+.rctCtn{
+    position: relative;
+    width: 100%;
+    background: none repeat scroll 0 0 #fff;
+    padding: 7px 0px;
+}
+.chtCtn{
+    float: left;
+    height: auto;
+    border-right: medium none;
+    border-top: medium none;
+}
+.chtMsg{
+    position: relative;
+    margin: 0;
+    border-radius:4px;
+}
+.chtMsg #talk li{
+    margin-bottom: 5px;
+}
+.lft .chtMsg{
+    float: left;
+    margin-left: 20px;
+    /*background: none repeat scroll 0 0 #f5faff;*/
+    border: 1px solid #acccef;
+}
+.lft .chtMsg-greeting{
+    border: 0;
+    float: none;
+    margin: 0 10px;
+}
+.robot{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+.robot::before{
+    display: table;
+    content: " ";
+}
+.lft .chtMsg-greeting .chat{
+    font-size: 15px;
+    width: 722px;
+    position: relative;
+    word-break: break-all;
+}
+.robot-response{
+    position: relative;
+    margin-left: 62px;
+    border-radius: 8px;
+    border: 1px solid #E5E5E5;
+    background: #F7F9FA;
+}
+.robot-chat{
+    padding: 14px 18px;
+}
+.robot-icon{
+    background: url(https://img.alicdn.com/tfs/TB1LIeYvQyWBuNjy0FpXXassXXa-46-46.png) center center no-repeat;
+    color: #3d5c71;
+    position: absolute;
+    border-radius: 46px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    line-height: 46px;
+}
+.robot-talk-cor{
+    border-color: transparent #F0F0F0 transparent transparent;
+    left: 81px;
+    z-index: 100;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-width: 6px;
+    border-style: solid;
+    overflow: hidden;
+    position: absolute;
+    top: 32px;
+    box-sizing: border-box;
+}
+
+.me{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    height: 50px;
+}
+.i-talk{
+    font-size: 15px;
+    color: white;
+    padding-right: 10px;
+    position: relative;
+    width: 100%;
+}
+.me-chat{
+    background: #3AAEFF;
+    float: right;
+    width: 46px;
+    height: 46px;
+    border-radius: 46px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    line-height: 46px;
+}
+.content{
+    border-radius: 8px;
+    background: #3AAEFF;
+    margin-right: 16px;
+    padding: 14px 18px;
+    float: right;
+    width: 50%;
+    word-break: break-all;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.i-talk-cor{
+    border-color: transparent transparent transparent #3AAEFF;
+    right: 68px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-width: 6px;
+    border-style: solid;
+    overflow: hidden;
+    position: absolute;
+    top: 17px;
+    box-sizing: border-box;
+}
+.hot-number{
+    padding-left: 13px;
+    background: #ffffff;
+    box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 124px;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #373D41;
+}
+.hot-item{
+    margin-left: 10px;
+    line-height: 25px;
+    height: 25px;
+    display: inline-block;
+    padding: 0px 11px;
+    border: 1px solid rgba(155, 158, 160, 0.6);
+    background: #F4F7FC;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #373D41;
+    max-width: 144px;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+}
+
+
+
+
+.freq-box{
+    width: 100%;
+    height: 360px;
+    /*border: 1px solid red;*/
+}
+.freq-header{
+    width: 100%;
+    height: 36px;
+    background: #f5faff;
+    padding-top: 14px;
+    font-family: 'Microsoft YaHei UI ' !important;
+}
+.freq-title{
+    text-align: left;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top:2px;
+}
+.freq-change-btn{
+    float: right;
+    font-size: 12px;
+    diaplay:inline;
+    width: 55px;
+    cursor: pointer;
+    margin-top:-30px;
+    margin-right:20px;
+}
+.support-box{
+    width: 100%;
+    height: 160px;
+    background-color: #fff;
+}
+.support-content{
+    width: 300px;
+    text-align: center;
+    color: #7b7b7b;
+    position:absolute;
+    bottom:30px;
+    font-family: "Microsoft YaHei UI" !important;
+    text-decoration: none;
+}
+.ask-area{
+    background: white;
+    position: absolute;
+    height: 124px;
+    width: 100%;
+    border-top: 1px solid #E5E5E5;
+    bottom: 0px;
+}
+.input-area{
+    z-index: 1040;
+    position: absolute;
+    right: 124px;
+    left: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+    top: 24px;
+}
+.input-tip{
+    list-style: none;
+    bottom: 79px;
+    border: 1px solid #E5E5E5;
+    border-bottom: 0px;
+    left: 18px;
+    right: 18px;
+    background: #fff;
+    z-index: 300;
+    padding-left: 0;
+}
+#search{
+    overflow-y: auto;
+    width: 100%;
+    height: 78px;
+    border: 1px solid #E5E5E5;
+    resize: none;
+    padding: 4px 8px;
+}
+.send-btn{
+    width: 85px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    float: right;
+    margin: 45px 20px;
+    border: 1px solid #00C1DE;
+    background: #e2f8fb;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #00a2ca;
+}

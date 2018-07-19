@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>呆萌在线聊天顾问</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+    </script>
+</head>
+<body style="overflow: hidden" onkeydown="onKeyDown(document.getElementById('search').value)"  >
+    <div id="container">
+        <div class="header">
+            <div class="logo logo-text">呆萌在线聊天顾问</div>
+            <div id="contact-btn" class="func-btn" style="display: block">
+                <span>联系我们</span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="lside">
+                <div class="chat-box" >
+                    <div class="jspScrollable"   style="overflow: auto" tabindex="0">
+                        <div class="jspContainer">
+                            <div class="jspPane" id="jspPane" style="width: 100%;">
+                                <div class="rctCtn chtCtn lft" >
+                                    <div class="chtMsg chtMsg-greeting">
+                                        <div id="talk">
+                                            <div class="robot" style="margin-top: 20px;">
+                                                <div class="chat">
+                                                    <div class="robot-icon" style="width:46px;height: 46px;"></div>
+                                                    <div class="robot-response">
+                                                        <div class="robot-chat">
+                                                            主人你好，有什么需要吗？
+                                                        </div>
+                                                    </div>
+                                                    <span class="robot-talk-cor"></span>
+                                                </div>
+                                            </div>
+
+                                            <!--<div class="me">-->
+                                                <!--<div class="i-talk">-->
+                                                    <!--<div class="me-chat">我</div>-->
+                                                    <!--<div class="content">测试一下</div>-->
+                                                    <!--<span class="i-talk-cor"></span>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a id="msg_end" name="1" href="#1"> </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot-number">
+                    热门问题：
+                    <div id="ecs" class="hot-item">ecs</div>
+                    <div id="yuming" class="hot-item">域名</div>
+                    <div id="beian" class="hot-item">备案</div>
+                    <div id="youxiang" class="hot-item">邮箱</div>
+                </div>
+
+                <!--<div class="send-box">-->
+                    <!--<div class="input-box" autocomplate="off" >-->
+                        <!--<input type="text" id="input" class="input ui-autocomplate-input" placeholder="主人，您还想问些什么？" autocomplete="off" autofocus>-->
+                    <!--</div>-->
+                    <!--<div id="send-btn" class="send-btn">-->
+                        <!--<span onclick="sendMessage(document.getElementById('input').value)">发送</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+                <div class="ask-area">
+                    <div class="input-area">
+                        <ul class="input-tip">
+                            <textarea id="search" autocomplete="off" disableautocomplete placeholder="主人，您有什么想问的吗？" autofocus></textarea>
+                        </ul>
+                    </div>
+                    <button class="send-btn" onclick="sendMessage(document.getElementById('search').value)">
+                        发送
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
